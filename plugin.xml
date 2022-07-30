@@ -1,0 +1,18 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-electron-events" version="2.1.1-dev">
+    <name>Electron Events</name>
+    <description>A cordova plugin for the electron platform to hook into electron lifecycle events.</description>
+    <license>MIT</license>
+    <keywords>ecosystem:cordova, cordova-electron, electron, events, hooks, cordova-plugin</keywords>
+    <repo>https://github.com/manojchandrashekar/cordova-plugin-electron-events.git</repo>
+    <issue>https://github.com/manojchandrashekar/cordova-plugin-electron-events/issues</issue>
+
+    <engines>
+        <engine name="cordova-electron" version=">=2.0.0" />
+    </engines>
+
+    <platform name="electron">
+        <hook type="before_build" src="scripts/add-hooks.js" />
+        <hook type="before_run" src="scripts/add-hooks.js" />
+        <hook type="before_emulate" src="scripts/add-hooks.js" />
+    </platform>
+</plugin>
