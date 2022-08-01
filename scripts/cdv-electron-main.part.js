@@ -13,7 +13,7 @@ if (
 }
 
 events.forEach((ev) => {
-  let scriptFile = path.resolve(projectRoot, ev.script);
+  let scriptFile = path.resolve(__dirname, path.basename(ev.script));
   let evFn = require(scriptFile);
   app.on(ev.event, evFn);
 });

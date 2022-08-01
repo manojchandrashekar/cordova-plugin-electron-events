@@ -11,8 +11,7 @@
     </engines>
 
     <platform name="electron">
-        <hook type="before_build" src="scripts/add-hooks.js" />
-        <hook type="before_run" src="scripts/add-hooks.js" />
-        <hook type="before_emulate" src="scripts/add-hooks.js" />
+        <hook type="after_prepare" src="scripts/add-hooks.js" />
+        <hook type="after_prepare" src="scripts/copy-scripts.js" />
     </platform>
 </plugin>
