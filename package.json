@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-electron-events",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A cordova plugin for the electron platform to hook into electron lifecycle events.",
   "main": "index.js",
   "scripts": {
